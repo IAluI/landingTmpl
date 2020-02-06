@@ -2,15 +2,19 @@ mixin icon(name, color)
   svg(class = `icon icon-${name}${color ? ' icon-' + color: ''}`)&attributes(attributes)
     use(xlink:href = `/img/icons.svg#${name}`)
 
+block variables
+
 doctype html
 html(lang='ru')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width', initial-scale='1', shrink-to-fit='no')
+    meta(name='description', content=description)
+    meta(name='keywords', content=keywords)
+    link(rel='shortcut icon', type='image/x-icon', href=faviconUrl)
     link(rel='stylesheet', type='text/css', href='/css/main.css')
     block additionStyle
-    title
-      block title
+    title= title
   body
     div.PageWrapper
       header

@@ -63,9 +63,9 @@ const paths = {
     watch: "./src/scss/*.scss"
   },
   images: {
-    src: "./src/img/*.{jpg,jpeg,png,gif,svg}",
+    src: "./src/img/*.{jpg,jpeg,png,gif,svg,ico}",
     dist: "./dist//img/",
-    watch: "./src/img/*.{jpg,jpeg,png,gif,svg}"
+    watch: "./src/img/*.{jpg,jpeg,png,gif,svg,ico}"
   },
   rastrSprite: {
     src: "./src/icons_r/*.{png,jpg,jpeg}",
