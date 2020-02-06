@@ -1,0 +1,38 @@
+/*
+  Настройки Bootstrap
+*/
+$enable-validation-icons: false;
+$enable-responsive-font-sizes: true;
+/*
+  Библиотеки
+*/
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/swiper/swiper";
+@import "./node_modules/swiper/components/pagination/pagination";
+@import "./node_modules/swiper/components/navigation/navigation";
+@import "./node_modules/swiper/components/effect-fade/effect-fade";
+/*
+  Векторные спрайты
+*/
+@import "./tmp/icons";
+/*
+  Растровые спрайты спрайты
+*/
+$spritesheet-sprites: false;
+@import "./tmp/sprite";
+@if ($spritesheet-sprites) {
+  .icon-r {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  @include sprites($spritesheet-sprites);
+}
+
+.PageWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1 0 auto;
+  }
+}

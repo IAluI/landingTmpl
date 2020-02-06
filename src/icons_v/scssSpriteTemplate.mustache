@@ -1,0 +1,20 @@
+.icon {
+  display: inline-block;
+  font-size: 1.25rem;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-black {
+  fill: #000;
+}
+
+.icon-white {
+  fill: #fff;
+}
+
+{{#shapes}}
+.icon-{{base}} {
+  width:({{width.inner}}/{{height.inner}})*1em;
+}
+{{/shapes}}
